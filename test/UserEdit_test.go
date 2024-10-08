@@ -64,8 +64,8 @@ func TestUserEdit(t *testing.T) {
 
 		user := models.User{
 			Name:     "userEdit1",
-			Email:    "userEdit1@gmail.com",
-			Password: "userEdit1@123",
+			Email:    "userEdit@gmail.com",
+			Password: "userEdit@123",
 		}
 		jsonValue, _ := json.Marshal(user)
 		req, _ := http.NewRequest(http.MethodPatch, "/user/edit/11", bytes.NewBuffer(jsonValue))
